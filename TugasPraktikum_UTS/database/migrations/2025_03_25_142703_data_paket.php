@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('data_Paket', function (Blueprint $table) {
             $table->id();
-            $table->integer('noresi');
+            $table->integer('noResi');
             $table->string('pengirim');
             $table->string('penerima');
             $table->string('asal');

@@ -6,19 +6,20 @@ use App\Models\DataPaket;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class MainController extends Controller
+class    MainController extends Controller
 {
 
-    //fungsi data paket
-    function dataPaket()
-    {
-        $data = array(
-            'title' => 'Data Paket',
-
-        );
-        $data_Paket = DataPaket::all();
-        return view('page/dataPaket', compact('data_Paket'), $data);
-    }
+     // fungsi data paket
+     function dataPaket()
+     {
+         $data = array(
+             'title' => 'Data Paket',
+ 
+         );
+         $data_Paket = DataPaket::all();
+         return view('page/dataPaket', compact('data_Paket'), $data);
+     }
+ 
 
     //fungsi tambah form data apekt
     function dataPaketProses()
@@ -97,7 +98,7 @@ class MainController extends Controller
             'asal' => 'required|string',
             'tujuan' => 'required|string',
             'status' => 'required|string',
-            'tangalgUpdate' => 'required|string',
+            'tanggalUpdate' => 'required|string',
             'estimasiTiba' => 'required|string'
         ]);
 

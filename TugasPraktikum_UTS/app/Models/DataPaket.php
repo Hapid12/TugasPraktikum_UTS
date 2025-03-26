@@ -18,5 +18,6 @@ class DataPaket extends Model
         'tujuan',
         'status',
         'tanggalUpdate',
+        'estimasiTiba'
     ];
 }

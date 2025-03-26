@@ -14,8 +14,7 @@ use App\Http\Controllers\MainController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
 
     Route::get('/dataPaket', [MainController::class, 'dataPaket'])->name('dataPaket');
 
@@ -25,4 +24,3 @@ Route::get('/', function () {
     Route::get('/data_paket/hapusPaket/{id}', [MainController::class, 'destroyPaket'])->name('hapusPaket');
     Route::get('/data_paket/editDataPaket/{id}', [MainController::class, 'editPaket'])->name('editPaket');   
     Route::post('/data_paket/updatePaket/{id}', [MainController::class, 'updatePaket'])->name('updatePaket');
-});
